@@ -1,0 +1,6 @@
+Example Windows compile command (update paths based on your extracted libs):
+
+g++ main.cpp libs/glad/src/glad.c -o game ^
+  -Ilibs/glad/include -Ilibs/glm ^
+  -Llibs/glfw/lib-mingw-w64 ^
+  -lglfw3 -lopengl32 -lgdi32
