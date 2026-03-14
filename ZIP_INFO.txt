@@ -1,0 +1,13 @@
+Foodshala Website Packaging Notes
+
+This repository should only contain source files (HTML/CSS/JS).
+Do not commit packaged archives to PRs because many PR editors do not support binary artifacts.
+
+How to create a downloadable zip locally:
+zip -r Foodshala-Website.zip index.html about.html menu.html gallery.html reservation.html events.html contact.html styles.css script.js
+
+If you need to bypass extension filters for sharing, rename locally:
+cp Foodshala-Website.zip Foodshala-Website.html
+
+Then rename back after download:
+mv Foodshala-Website.html Foodshala-Website.zip
