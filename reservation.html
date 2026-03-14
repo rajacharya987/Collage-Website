@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation | Foodshala Restaurant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Foodshala Restaurant</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="active" href="reservation.html">Reservation</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="grid grid-2">
+      <article class="card">
+        <h1>Reserve Your Table</h1>
+        <p>Book your table in advance for lunch, dinner, birthdays, anniversaries, and family gatherings.</p>
+        <form id="reservationForm">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" required>
+
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" required>
+
+          <label for="date">Date</label>
+          <input id="date" type="date" name="date" required>
+
+          <label for="time">Time</label>
+          <input id="time" type="time" name="time" required>
+
+          <label for="guests">Number of Guests</label>
+          <select id="guests" name="guests">
+            <option>2</option>
+            <option>4</option>
+            <option>6</option>
+            <option>8+</option>
+          </select>
+
+          <label for="message">Special Request</label>
+          <textarea id="message" name="message" rows="4" placeholder="Example: birthday setup, quiet corner, or vegetarian preference"></textarea>
+
+          <button class="btn btn-primary" type="submit">Submit Booking</button>
+        </form>
+        <p id="reservationStatus" class="form-status"></p>
+      </article>
+
+      <article class="card">
+        <h2>Why Reserve Early</h2>
+        <ul class="list-clean">
+          <li>Priority seating during peak evening hours</li>
+          <li>Better planning for birthdays and anniversaries</li>
+          <li>Faster table preparation for larger groups</li>
+          <li>Special arrangements based on your requests</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">Foodshala Restaurant, Itahari</footer>
+  <script src="script.js"></script>
+</body>
+</html>
